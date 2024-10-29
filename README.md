@@ -14,3 +14,4 @@ ADVANCED FUNCTIONS:
 - Making a login page with a user id and password (password validation)
 - Generate a graph to show all the data
 
+Make sure to write comments when you are implementing the code!!
