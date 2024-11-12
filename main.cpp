@@ -24,10 +24,10 @@ int main()
 	for (long long unsigned int i = 0; i < Jacquavius.records.size(); i++)
 	{
 		cout << Jacquavius.records.at(i).name << endl
-			 << Jacquavius.records.at(i).description << endl
-			 << Jacquavius.records.at(i).grade << endl
-			 << Jacquavius.records.at(i).maxGrade << endl
-			 << Jacquavius.records.at(i).weight << endl;
+		     << Jacquavius.records.at(i).description << endl
+		     << Jacquavius.records.at(i).grade << endl
+		     << Jacquavius.records.at(i).maxGrade << endl
+		     << Jacquavius.records.at(i).weight << endl;
 	}
 
   // terminate
