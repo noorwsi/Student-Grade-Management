@@ -33,10 +33,10 @@ void readFromFile(Student& student)
 	{
 		Assignment assignment;
 		file >> assignment.name
-			 >> assignment.description
-			 >> assignment.grade
-			 >> assignment.maxGrade
-			 >> assignment.weight;
+		     >> assignment.description
+		     >> assignment.grade
+		     >> assignment.maxGrade
+		     >> assignment.weight;
 
 		student.records.push_back(assignment);
 	}
