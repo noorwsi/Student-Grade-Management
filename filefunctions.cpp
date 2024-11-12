@@ -6,9 +6,9 @@ void readFromFile(Student& student)
 	cout << "Please input your Student ID: ";
 	cin >> student.studentID;
 
-	// Opens file based on the student's ID. All files should be named using the student's ID.
 	ifstream file;
-	/* When you open the file, you need to specify the path that the file is located in. This is not always the case, but
+	/* Opens file based on the student's ID. All files should be named using the student's ID.
+ 	 * When you open the file, you need to specify the path that the file is located in. This is not always the case, but
 	 * I happened to run into an error when I didn't specify it. Replace the entire first portion with your own path directory.
 	 */
 	file.open("C:\\Users\\legen\\eclipse-workspace\\Student Management System\\Student-Grade-Management\\" + student.studentID + ".txt");
