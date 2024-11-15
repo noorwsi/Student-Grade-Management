@@ -59,7 +59,7 @@ void writeToFile(Student& student)
 	else{
 		for (Assignment assignment : student.records)
 	{
-		file << assignment.name << " "
+	file << assignment.name << " "
 	<< assignment.description << " "
 	<< assignment.grade << " " 
 	<< assignment.maxGrade << " " 
