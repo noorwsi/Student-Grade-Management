@@ -50,6 +50,27 @@ void readFromFile(Student& student)
 
 void writeToFile(Student& student)
 {
-	ofstream file;
+    ofstream file;
+	outputFile.open("studentID.txt",ios::app);
+	
+    if (file.fail())
+    {
+        cout << "Failed to open file for writing." << endl;
+        return ;
+    }
+    
+    else {
+    for (Assignment assignment : student.records)
+    {
+        file << assignment.name << " "
+             << assignment.description << " "
+             << assignment.grade << " "
+             << assignment.maxGrade << " "
+             << assignment.weight << endl;
+    }
+    }
 
+
+    file.close();
 }
+
