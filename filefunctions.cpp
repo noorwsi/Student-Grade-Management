@@ -51,21 +51,20 @@ void readFromFile(Student& student)
 void writeToFile(Student& student)
 {
 	ofstream file;
-	file.open("studentID.txt",ios::app);
-		
-	if(file.fail()){
-		cout<< "Failed to open file for writing." << endl;
+	file.open("C:\\Users\\legen\\eclipse-workspace\\Student Management System\\Student-Grade-Management\\" + student.studentID + ".txt"));
+	
+	if (file.fail()) {
+		cout << "Failed to open file for writing." << endl;
 	}
-	else{
-		for (Assignment assignment : student.records)
-	{
-	file << assignment.name << " "
-	<< assignment.description << " "
-	<< assignment.grade << " " 
-	<< assignment.maxGrade << " " 
-	<< assignment.weight << endl;
-	}	
-}
-
-file.close();
+	else {
+		for (Assignment assignment : student.records) {
+			file << assignment.name << " "
+			     << assignment.description << " "
+                             << assignment.grade << " "
+                             << assignment.maxGrade << " "
+                             << assignment.weight << endl;
+		}
+	}
+	
+	file.close();
 }
